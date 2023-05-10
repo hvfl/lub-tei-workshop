@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/css" href="style.css"?>
+<text>
+    <pb n="3"/>
+    <head>Geschichte der Kunst des Alterthums</head>
+    <h1>Erster Theil. Untersuchung der Kunst nach dem Wesen derselben.</h1>
+    <h2>Erstes Kapitel. Von dem Ursprunge der Kunst, und den Ursachen ihrer Verschiedenheit unter den Völkern. </h2>
+    <margin>Erstes Stück I. Allgemeiner Begriff dieser Geschichte</margin>
+    <p>Die Künste, welche von der Zeichnung abhängen, haben, wie alle Erfindungen, mit dem Nothwendigen angefangen; nachdem suchte man die Schönheit, und zuletzt folgete das Überflüßige: dieses sind die drey vornehmsten Stuffen der Kunst.</p> 
+</text>

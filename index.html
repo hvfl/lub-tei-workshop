@@ -1,0 +1,114 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>LUB III</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/white.css">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+
+		<style>
+			body {
+				font-family: Helvetica !important;
+				padding-left: 60px;
+				padding-right: 40px;
+			}
+
+			h1, h2, h3, h4 {
+				font-family: Helvetica !important;
+				text-align: left !important;
+			}
+
+			* {
+				text-align: left !important;
+			}
+			
+			.reveal img, .reveal video, .reveal iframe {
+				--r-block-margin: 0px !important;
+				padding: 0;
+				max-width: 100%;
+    			max-height: 100%;
+			}
+			.left {
+				text-align: left !important;
+			}
+			:root {
+				--r-block-margin: 0px;
+			}
+			.reveal blockquote {
+  				display: block;
+				text-align: left !important;
+				font-family: Times !important;
+  				position: relative;
+  				width: 90%;
+  				margin: var(--r-block-margin) auto;
+  				padding: 10px;
+  				background: rgba(200, 200, 200, 0.05);
+			}
+		</style>
+	</head>
+	<body>
+		
+		<div class="reveal">
+			<div class="slides">
+				<section data-markdown="00-einleitung.md"
+						 data-separator="^%---"
+						 data-separator-vertical="^%--"
+						 data-separator-notes="^Note:">
+				</section>
+				<section data-markdown="01-xml.md"
+						 data-separator="^%---"
+						 data-separator-vertical="^%--"
+						 data-separator-notes="^Note:">
+				</section>
+				<section data-markdown="02-tei.md"
+						 data-separator="^%---"
+						 data-separator-vertical="^%--"
+						 data-separator-notes="^Note:">
+				</section>
+				<section data-markdown="03-tei-publisher.md"
+						 data-separator="^%---"
+						 data-separator-vertical="^%--"
+						 data-separator-notes="^Note:">
+				</section>
+				<section data-markdown="04-xpath.md"
+						 data-separator="^%---"
+						 data-separator-vertical="^%--"
+						 data-separator-notes="^Note:">
+				</section>
+				<section data-markdown="05-git.md"
+						 data-separator="^%---"
+						 data-separator-vertical="^%--"
+						 data-separator-notes="^Note:">
+				</section>
+				<section data-markdown="06-workflow.md"
+						 data-separator="^%---"
+						 data-separator-vertical="^%--"
+						 data-separator-notes="^Note:">
+				</section>
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+	</body>
+</html>

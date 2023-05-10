@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="kbga-texts-23">
+  <!--
+kba: Karl Barth-Archiv https://kba.anton.ch
+kbga: Karl Barth-Gesamtausgabe (incl. digital edition)
+pga: The printed Gesamtausgabe
+asp: Princeton Barth Project edition (original XML-Data for vol 1-36)
+
+Entities/Identifier:
+
+KBA
+- kba-actors-id (integer)
+- kba-places-id (integer)
+- kba-objects-identifier (string) // eg. 'KBA 2002.101'
+- kba-objects-id (integer) // the internal id of kba also used for permalinks
+
+KBGA
+- kbga-texts-id for texts in TEI[@xml:id]; used for permalinks https://kbga.karl-barth.ch/texts/{id}
+- kbga-actors-id (integer)
+- kbga-places-id (integer)
+-->
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title type="volume" n="vol-01">Karl Barth - Rudolf Bultmann. Briefwechsel 1911-1966</title>
+        <title type="formal">Brief Nr. 21</title>
+        <title type="content">Karl Barth an Rudolf Bultmann</title>
+        <title type="citation_line_1">Barth, Karl: Karl Barth an Rudolf Bultmann, 15. Jul 1924</title>
+        <title type="citation_line_2">https://kbga.karl-barth.ch/texts/23 (Stand: 11. May 2020)</title>
+        <title type="citation_line_3">Druck: Brief Nr. 21, in: Karl Barth-Gesamtausgabe. Karl Barth - Rudolf Bultmann. Briefwechsel 1911-1966, Zürich 1994, S. 36-36</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Digitale Karl Barth Gesamtausgabe</edition>
+        <sponsor>Schweizerischer Nationalfonds (SNF)</sponsor>
+        <sponsor>Karl Barth-Stiftung</sponsor>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Karl Barth-Archiv</publisher>
+        <pubPlace>Basel</pubPlace>
+        <date when="2020">2020</date>
+        <availability>
+          <licence target="https://creativecommons.org/licenses/by-nc-nd/4.0/deed.de">Creative Commons BY-NC-ND</licence>
+        </availability>
+        <idno type="url">https://kbga.karl-barth.ch/texts/23</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <!-- The printed Gesamtausgabe-->
+        <bibl type="pga" xml:id="pga">
+          <title type="volume">Karl Barth - Rudolf Bultmann. Briefwechsel 1911-1966</title>
+          <title type="text">21</title>
+          <author ref="kbga-actors-2151">Barth, Karl</author>
+          <pubPlace>Zürich</pubPlace>
+          <publisher>Theologischer Verlag</publisher>
+          <date type="publication">1994</date>
+          <biblScope unit="page">Pp. 36-36</biblScope>
+          <!--position within a volume-->
+          <biblScope unit="part">23</biblScope>
+        </bibl>
+        <!-- The first digital edition (data from xml and database) -->
+        <bibl type="asp" xml:id="asp">
+          <title type="edition">Princeton Barth Project edition</title>
+          <title type="text">electronic edition of Karl Barth, Gesamtausgabe V.1, Karl Barth Rudolf Bultmann Briefwechsel 1911-1966, letter 21</title>
+          <author ref="kbga-actors-2151">Barth, Karl</author>
+          <editor>James R. Adair, Jr.</editor>
+          <editor>Timothy J. Finney</editor>
+          <editor>Christian Kelm</editor>
+          <pubPlace>Princeton</pubPlace>
+          <publisher>Alexander Street Press</publisher>
+          <date type="publication">2001</date>
+        </bibl>
+        <!-- Data from KBA (https://kba.anton.ch) -->
+        <msDesc type="source" xml:id="kba-objects-12743" n="A" subtype="Vorlage_der_Edition">
+          <msIdentifier>
+            <repository>Karl Barth-Archiv</repository>
+            <idno type="kba-objects-identifier">KBA 9224.37</idno>
+            <altIdentifier>
+              <idno type="URI">https://kba.anton.ch/objects/12743</idno>
+            </altIdentifier>
+            <altIdentifier>
+              <idno type="kba-objects-id">12743</idno>
+            </altIdentifier>
+            <altIdentifier>
+              <idno type="kbga-sources-id">22</idno>
+            </altIdentifier>
+          </msIdentifier>
+          <msContents>
+            <msItem>
+              <title>Karl Barth an Rudolf Bultmann</title>
+              <docDate>
+                <date type="creation" when="1924-07-15">15. Jul 1924</date>
+              </docDate>
+            </msItem>
+          </msContents>
+        </msDesc>
+        <!-- we should provide more types: <bibl type="not-found-in-kba"></bibl> <bibl type="not-in-kba"></bibl>  -->
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="ger">German</language>
+      </langUsage>
+      <textClass>
+        <keywords>
+          <term>letter</term>
+        </keywords>
+      </textClass>
+      <correspDesc>
+        <correspAction type="sent">
+          <persName ref="kbga-actors-2151">Barth, Karl</persName>
+          <date when="1924-07-15">1924-07-15</date>
+        </correspAction>
+        <correspAction type="received">
+          <persName ref="kbga-actors-512">Bultmann, Rudolf</persName>
+          <placeName key="kbga-places-41">Marburg</placeName>
+        </correspAction>
+      </correspDesc>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2020-05-11T17:20:41+02:00">teiHeader was automatically produced from the database 2020-05-11T17:20:41+02:00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <pb xml:id="p036" ed="pga"/>
+    <body>
+      <head>21</head>
+      <div type="letter">
+        <opener>
+          <persName ref="kbga-actors-2151">Barth</persName>
+          <dateline><placeName>Göttingen</placeName>, <date>15.VII.1924</date></dateline>
+          <salute>Lieber Herr Bultmann!</salute>
+        </opener>
+        <p>Ich wollte wohl kommen, aber ich habe hier so heillos viel Werg an der Kunkel, daß es unmöglich geht. Überdies ließ ich mich letztes Mal durch <persName ref="kbga-actors-329">Rades</persName> Protest gegen mein Erscheinen endgültig belehren, daß ich dort zu Gastrollen irgendwelcher Art nicht erwünscht bin. Und endlich bin ich als schwerfälliger Schweizer doch nicht so rasch von Begriffen, daß ich hurtig genug einsehen würde, was Heidegger, den ich noch gar nicht kenne, will, um mich nützlich an der Debatte beteiligen zu können. Wollen wir nicht einmal eine kleine Marburg-Göttingen-Konferenz an einem <hi rend="i">dritten</hi> Ort veranstalten? Frl. <persName ref="kbga-actors-361">Haas</persName> scheint Ihnen ausgerechnet die finstersten Partieen aus meiner Vorlesung<note xml:id="n01">D.h. wohl: aus ihrer Nachschrift von Barths Dogmatik-Vorlesung im Sommersemester <date>1924</date>; s. <ref type="pub" subtype="bib1-gesd" target="b0012">Nr. 12</ref>, Anm. 13.</note> vorgetragen zu haben.</p>
+        <closer>
+          <salute>Mit herzlichem Gruß und Dank</salute>
+          <salute>Ihr</salute>
+          <signed>Karl Barth</signed>
+        </closer>
+      </div>
+    </body>
+  </text>
+</TEI>

@@ -1,0 +1,179 @@
+% !TEX TS-program = lualatex 
+% !TEX encoding = UTF-8 Unicode
+% notumble,
+\documentclass[notumble, nofoldmark]{leaflet}
+%\documentclass{leaflet}
+\RequirePackage[top=20mm,left=12mm,right=12mm,bottom=20mm]{geometry} % Seitenränder
+
+\newenvironment{ritemize}{\begin{itemize}[label=--,noitemsep, topsep=0pt]\RaggedRight}{\end{itemize}}
+
+\usepackage{anton} % works only with luatex or xetex!
+\usepackage{tabularx} 
+\usepackage{lettrine}
+\usepackage{ragged2e}
+\usepackage[format=plain,
+      justification=RaggedRight,
+      singlelinecheck=false]
+     {caption} 
+
+\begin{document}
+\newcommand{\titel}{ANTON}
+\newcommand{\type}{Die Archivdatenbank} 
+
+\begin{titlepage}
+\raggedleft{\textsf{\textbf{\fontsize{24pt}{20pt}\selectfont \color{Gray}{k\,\&\,r}}}}\\[4cm]
+\huge \textbf{{\fontsize{38pt}{38pt}\selectfont{\titel}}}\\
+\large \scalebox{.98}[1.0]{\type} \\
+\vspace*{\fill}
+\includegraphics[width=0.7\textwidth]{Aardvark2_(PSF).png}
+
+\end{titlepage}
+
+
+\lettrine[lines=1]{A}{NTON} ist eine Archivdatenbank, die Sie bei der Erschliessung ihrer Sammlung und der Vermittlung im Internet unterstützt. %So sind Sie mit ihren Findmitteln online und können ihre digitalen Unterlagen zugänglich machen. 
+
+\lettrine[lines=1]{A}{NTON} unterstützt internationale Standards. So produzieren Sie solide Daten, die langfristig und softwareunabhängig nutzbar sind.
+
+\lettrine[lines=1]{A}{NTON} ist anpassbar und erweiterbar. So werden Sie ihrer Sammlung ohne Kompromisse gerecht.
+
+\vfill
+\includegraphics[width=1.1\linewidth]{screenshot.png}\\
+\footnotesize
+Konzernarchiv Georg Fischer AG.
+\normalsize
+
+\pagebreak
+\section*{Funktionen (Auswahl)}
+\subsubsection*{Vorarchivischer Bereich}
+\begin{ritemize}
+    \item Import von Erschliessungsdaten aus Excel"=dateien.
+    \item Import von Digitalen Objekten (Dokumente, Bilder und AV-Medien).
+\end{ritemize}
+
+\subsubsection*{Archivischer Bereich}
+\begin{ritemize}
+    \item Einfache Erstellung der Tektonik.
+    \item ISAD(G) als Erschliessungsstandard.
+    \item Zusätzliche Felder definierbar.
+    \item Verschlagwortung.
+    \item Automatische Erzeugung von Signaturen.
+    \item Datensätze kopierbar und verschiebbar.
+    \item Anpassbare Erfassungsmasken und Feldbezeichnungen.
+    \item Schutzfristen.
+    \item Aus untergeordneten Datensätzen errechnete Laufzeiten.
+    \item Separate Verwaltung der Provenienzen, der Standorte, der Schlagwörter, der Sprachen und der weiteren Wertelisten.
+    \item Einfache Integration der digitalen Objekte per Drag and Drop.
+\end{ritemize}
+
+\subsection*{Benutzung und Vermittlung}
+\begin{ritemize}
+    \item Volltext- und Expertensuche. 
+    \item Anzeige der digitalen Objekte.
+    \item Anschluss an Archives Online oder an das europäische Archivportal grundsätzlich möglich.
+    \item Verwaltung von Ausleihen.
+\end{ritemize}
+
+\pagebreak
+\includegraphics[width=1\linewidth]{screenshot2.png}\\
+\footnotesize
+Testinstallation: www.anton.k-r.ch
+\normalsize
+\subsection*{Verwaltung}
+\begin{ritemize}
+    \item Benutzerrollen mit verschiedenen Rechten (admin, editor, user).
+    \item Mehrsprachige Benutzeroberfläche und Wertelisten (Deutsch, Englisch, Französisch, weitere Sprachen möglich).
+    \item Erscheinungsbild anpassbar (individuelle Homepage, eigenes Logo, Themes).
+\end{ritemize}
+
+\subsection*{Datenexport}
+\begin{ritemize}
+    \item Export von EAD-Findbüchern (kompatibel mit dem europäischen Archivportal).
+    \item Export nach EAD3.
+\end{ritemize}
+
+\subsection*{Datensicherheit (Anton als Service)}
+\begin{ritemize}
+    \item Serverstandort Schweiz.
+    \item Regelmässiges Backup.
+    \item SSL.
+\end{ritemize}
+
+%\section*{Geplante Erweiterungen}
+%\begin{ritemize}
+%    \item Umsetzung von ISAAR(CPF) für die Provenienzen
+%    \item Umsetzung von ISDIAH für die Beschreibung des Archivs
+%    \item Druck von Findbüchern
+%    \item Export und Druck von Ergebnislisten
+%    \item Verwaltung von Akzessionen
+%    \item Verwaltung von Ausleihen
+%    \item Import von EAD-Files
+%    \item Export in des EAD3-Format
+%    \item Vollständige Französisch-Lokalisation
+%\end{ritemize}
+
+\pagebreak
+
+\section*{ANTON ist …} 
+\lettrine[lines=1]{I}{ntuitiv}.\\ Wir entwickeln ANTON im ständigen Austausch mit unseren Kunden weiter. Dadurch wird die  Usability stetig verbessert. 
+
+\lettrine[lines=1]{S}{chlank}.\\ Für die Recherche und die Bearbeitung Ihrer Daten benötigen Sie keine lokal installierte Software, sondern lediglich einen Browser.
+% ++ kein eigener Server nötig
+
+\lettrine[lines=1]{A}{npassbar}.\\ Mit ANTON realisieren wir für Sie eine individuelle Lösung, die Sie bei Ihren Arbeitsprozessen optimal unterstützt.
+% ++ spezielle Sammlungen bedürfen spezieller Lösungen
+
+\lettrine[lines=1]{D}{igital}.\\ % und online
+ANTON ist für die digitale Welt konzipiert, so dass Sie digitale Objekte unkompliziert integrieren können.
+
+\lettrine[lines=1]{G}{ünstig}.\\
+Für die Entwicklung von ANTON verwenden wir soweit möglich Open-Source-Produkte. 
+\pagebreak
+
+\section*{Basisdaten}
+\begin{tabulary}{\textwidth}{@{}P{0.4\textwidth}P{(0.6\textwidth)}@{}}
+Name & ANTON \\
+Entwickler & k\,\&\,r\\
+%Version &  1.0\\
+Release-Datum & 13. Juni 2016\\
+Kategorie & Archivdatenbank\\
+Sprachen & D, E, F\\
+URL & www.anton.k-r.ch\\
+\end{tabulary}
+
+Betrieb als Service auf Webserver bei führendem Schweizer Anbieter oder Installation auf eigenem Server.
+
+\par
+\section*{Systemvoraussetzungen}
+\begin{ritemize}
+    \item Server: MySQL, PHP\,5.5.9, ImageMagick
+    % ssh-Zugang, git
+    \item Speicherplatz für die digitalen Objekte
+    \item Web-Browser
+\end{ritemize}
+
+
+\section*{Testinstallation}
+Sie können Anton gratis ausprobieren:\newline
+www.anton.k-r.ch
+
+\vfill
+
+%%\begin{tabular}{@{}p{0.45\linewidth}p{55\linewidth}@{}}
+%%\textbf{Kontakt} & \textbf{Vertriebspartner}\\
+%%Kränzle\,\&\,Ritter & Fachlabor Gubler\\
+%%Sihfeldstrasse 89 & Lerchensangstr. 13\\
+%%CH-8005 Zürich & 8552 Felben-Wellhausen\\
+%%+41\,44\,242\,77\,50 & +41\,52\,765\,36\,36\\
+%%www.k-r.ch & www.fachlabor-gubler.ch\\
+%%anton@k-r.ch & anton@fachlabor-gubler.ch\\
+%%\end{tabular}
+\begin{tabular}{@{}p{0.45\linewidth}p{55\linewidth}@{}}
+\textbf{Kontakt} & \\
+Kränzle\,\&\,Ritter & \\
+Sihfeldstrasse 89 & \\
+CH-8005 Zürich &  \\
++41\,44\,242\,77\,50 & \\
+www.k-r.ch & \\
+anton@k-r.ch & \\
+\end{tabular}
+\end{document}
