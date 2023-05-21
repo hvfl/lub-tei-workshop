@@ -1,8 +1,5 @@
 ### Git 
 
-
-
-
 %--
 #### Git: Workflow
 ![images/git-transport.webp](images/git-transport.webp)
@@ -18,8 +15,10 @@ https://blog.devgenius.io/git-for-absolute-beginners-part-1-42ad66a5866b
 
 %--
 
-GithubDesktop: Git fetch und pull
+#### Workflow GithubDesktop
 
-Arbeit an der Edition
+1. GithubDesktop: Git fetch und pull
 
-GithubDesktop: Commit und push
+2. Arbeit an der Edition (im Moment mit oXygen)
+
+3. GithubDesktop: Commit und push
